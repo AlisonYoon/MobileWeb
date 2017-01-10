@@ -1,0 +1,353 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<title>Flower by Sarah</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet">
+<link rel="apple-touch-icon-precomposed" href="app_icon.png">
+<link rel="apple-touch-startup-image" href="startup.png">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+<link href="css/idangerous.swiper.class.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/class.css">
+
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/prefixfree.min.js"></script>
+<script>
+  // <![CDATA[
+  try {
+   window.addEventListener('load', function(){
+    setTimeout(scrollTo, 0, 0, 1); 
+   }, false);
+  } 
+  catch(e) {}
+  // ]]>
+ </script>
+
+ <script>
+  // <![CDATA[
+  try {
+   window.addEventListener('load', function(){
+    setTimeout(scrollTo, 0, 0, 1); 
+   }, false);
+  } 
+  catch(e) {}
+  // ]]>
+ </script>
+
+<!--idangerous swiper-->
+ <script src="js/idangerous.swiper-2.1.min.js"></script>
+ <script>
+   $(document).ready(function(){
+    var tabsSwiper = new Swiper('.swiper-container',{
+    speed:500,
+    onSlideChangeStart: function(){
+      $(".tabs .active").removeClass('active')
+      $(".tabs a").eq(tabsSwiper.activeIndex).addClass('active')  
+    }
+    })
+    $(".tabs a").on('touchstart mousedown',function(e){
+    e.preventDefault()
+    $(".tabs .active").removeClass('active')
+    $(this).addClass('active')
+    tabsSwiper.swipeTo( $(this).index() )
+    })
+    $(".tabs a").click(function(e){
+    e.preventDefault()
+    })
+ });
+  </script>
+ <!--[if lt IE 9]> 
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+<script src="js/header.js"></script>
+<script src="js/scrolldown.js"></script>
+<script src="js/navbtn.js"></script>
+<script src="js/swiperslide.js"></script>
+<script src="js/fullreview.js"></script>
+
+
+</head>
+
+<body>
+  <div id="wrap">
+  <header>
+  <div id="wrap_head">
+    <h1 class="main_logo"><a href="index.html">Flower by Sarah</a></h1>
+    <div class="nav_btn">
+      <a href="#2">
+        <div id="nav-icon3">
+         <span class="navicon1"></span>
+         <span class="navicon2"></span>
+         <span class="navicon3"></span>
+         <span class="navicon4"></span>
+        </div></a>
+        <!--nav-icon3 e-->
+
+    </div>
+    <!--nav_btn e-->
+  </div>
+  <!--wrap_head e-->
+
+ <div class="navBox">
+     <nav>
+        <ul class="menubtn">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="florist.html">Florist</a></li>
+          <li><a href="yourday.html">Your Day</a></li>
+          <li><a href="class.html">Class</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li class="contact">Contact <br><span><a href="geo:37.472938,-122.131320" target="_blank"> 174 Parmers Ave. Palo Alto, CA 95037</a> </span><br><span><a href="tel:(408)584-3842">(408)584-3842</a></span></li>
+        </ul>
+        <ul class="leftbullet">
+          <li><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   width="63.927px" height="2px" viewBox="0 0 63.927 2" enable-background="new 0 0 63.927 2" xml:space="preserve">
+<path fill="none" stroke="#666666" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M1,1h61.927"/>
+</svg></li>
+<li><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   width="63.927px" height="2px" viewBox="0 0 63.927 2" enable-background="new 0 0 63.927 2" xml:space="preserve">
+<path fill="none" stroke="#666666" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M1,1h61.927"/>
+</svg></li>
+<li><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   width="63.927px" height="2px" viewBox="0 0 63.927 2" enable-background="new 0 0 63.927 2" xml:space="preserve">
+<path fill="none" stroke="#666666" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M1,1h61.927"/>
+</svg></li>
+<li><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   width="63.927px" height="2px" viewBox="0 0 63.927 2" enable-background="new 0 0 63.927 2" xml:space="preserve">
+<path fill="none" stroke="#666666" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M1,1h61.927"/>
+</svg></li>
+<li><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   width="63.927px" height="2px" viewBox="0 0 63.927 2" enable-background="new 0 0 63.927 2" xml:space="preserve">
+<path fill="none" stroke="#666666" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M1,1h61.927"/>
+</svg></li>
+        </ul>
+        <!--leftbullet e-->
+
+    <ul class="rightbullet">
+          <li><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   width="63.927px" height="2px" viewBox="0 0 63.927 2" enable-background="new 0 0 63.927 2" xml:space="preserve">
+<path fill="none" stroke="#666666" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M1,1h61.927"/>
+</svg></li>
+<li><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   width="63.927px" height="2px" viewBox="0 0 63.927 2" enable-background="new 0 0 63.927 2" xml:space="preserve">
+<path fill="none" stroke="#666666" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M1,1h61.927"/>
+</svg></li>
+<li><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   width="63.927px" height="2px" viewBox="0 0 63.927 2" enable-background="new 0 0 63.927 2" xml:space="preserve">
+<path fill="none" stroke="#666666" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M1,1h61.927"/>
+</svg></li>
+<li><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   width="63.927px" height="2px" viewBox="0 0 63.927 2" enable-background="new 0 0 63.927 2" xml:space="preserve">
+<path fill="none" stroke="#666666" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M1,1h61.927"/>
+</svg></li>
+<li><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   width="63.927px" height="2px" viewBox="0 0 63.927 2" enable-background="new 0 0 63.927 2" xml:space="preserve">
+<path fill="none" stroke="#666666" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M1,1h61.927"/>
+</svg></li>
+        </ul>
+        <!--rightbullet e-->
+
+     </nav>
+
+  </div>
+  <!--navBox e-->
+ 
+<div class="fullreview1">
+            <img class="closebtn" src="images/close.png" alt="close">
+            <img src="images/review1_x2.png" alt="previous student">
+            <p>Lorem ipsum dolor sit amet, sapien etiam, nunc amet dolor ac odio mauris justo. Luctus arcu, urna praesent at id quisque ac. Arcu es massa vestibulum malesuada, integer vivamus elit eu mauris eus, cum eros quis aliquam wisi. Nulla wisi laoreet suspendisse integer vivamus elit eu mauris hendrerit facilisi, mi mattis pariatur aliquam pharetra eget.
+Lorem ipsum dolor sit amet, sapien etiam, nunc amet dolor ac odio mauris justo. Luctus arcu, urna praesent at id quisque ac. Arcu es massa vestibulum malesuada, integer vivamus elit eu mauris eus, cum eros quis aliquam wisi. Nulla wisi laoreet suspendisse integer vivamus elit eu mauris hendrerit facilisi, mi mattis pariatur aliquam pharetra eget.</p>
+          </div>
+          <!--fullreview e-->
+
+<div class="fullreview2">
+            <img class="closebtn" src="images/close.png" alt="close">
+            <img src="images/review2_x2.png" alt="previous student">
+            <p>Lorem ipsum dolor sit amet, sapien etiam, nunc amet dolor ac odio mauris justo. Luctus arcu, urna praesent at id quisque ac. Arcu es massa vestibulum malesuada, integer vivamus elit eu mauris eus, cum eros quis aliquam wisi. Nulla wisi laoreet suspendisse integer vivamus elit eu mauris hendrerit facilisi, mi mattis pariatur aliquam pharetra eget.
+Lorem ipsum dolor sit amet, sapien etiam, nunc amet dolor ac odio mauris justo. Luctus arcu, urna praesent at id quisque ac. Arcu es massa vestibulum malesuada, integer vivamus elit eu mauris eus, cum eros quis aliquam wisi. Nulla wisi laoreet suspendisse integer vivamus elit eu mauris hendrerit facilisi, mi mattis pariatur aliquam pharetra eget.</p>
+          </div>
+          <!--fullreview e-->
+
+<div class="fullreview3">
+            <img class="closebtn" src="images/close.png" alt="close">
+            <img src="images/review3_x2.png" alt="previous student">
+            <p>Lorem ipsum dolor sit amet, sapien etiam, nunc amet dolor ac odio mauris justo. Luctus arcu, urna praesent at id quisque ac. Arcu es massa vestibulum malesuada, integer vivamus elit eu mauris eus, cum eros quis aliquam wisi. Nulla wisi laoreet suspendisse integer vivamus elit eu mauris hendrerit facilisi, mi mattis pariatur aliquam pharetra eget.
+Lorem ipsum dolor sit amet, sapien etiam, nunc amet dolor ac odio mauris justo. Luctus arcu, urna praesent at id quisque ac. Arcu es massa vestibulum malesuada, integer vivamus elit eu mauris eus, cum eros quis aliquam wisi. Nulla wisi laoreet suspendisse integer vivamus elit eu mauris hendrerit facilisi, mi mattis pariatur aliquam pharetra eget.</p>
+          </div>
+          <!--fullreview e-->
+
+</header>
+ 
+
+
+<!--article s-->
+<article>
+ <div class="box">
+ <div class="tabs">
+ 
+  <a href="#" class="active">Schedule</a> <a href="#">Review</a>
+  
+  </div>
+  <!--tabs e-->
+  </div>
+  <!--box e-->
+
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="content-slide slide1">
+          
+          <div class="class1">
+            <div class="classleft">
+              <p class="date">3.1 - 5.10</p>
+              <p>Mon <br> 2PM-5PM</p>
+            </div>
+            <!--classleft e-->
+            <div class="classright">
+              <p>English<br>Style</p>
+            </div>
+            <!--classright e-->
+
+          </div>
+          <!--class1 e-->
+
+           <div class="class1">
+            <div class="classleft">
+              <p class="date">4.3 - 5.25</p>
+              <p>Wed.Fri <br> 3PM-5PM</p>
+            </div>
+            <!--classleft e-->
+            <div class="classright">
+              <p>French<br>Style</p>
+            </div>
+            <!--classright e-->
+
+          </div>
+          <!--class1 e-->
+
+           <div class="class1">
+            <div class="classleft">
+              <p class="date">6.8 - 8.12</p>
+              <p>Tue <br> 7PM-8PM</p>
+            </div>
+            <!--classleft e-->
+            <div class="classright">
+              <p>Flower<br>Types</p>
+            </div>
+            <!--classright e-->
+
+          </div>
+          <!--class1 e-->
+
+           <div class="class1">
+            <div class="classleft">
+              <p class="date">7.1 - 7.29</p>
+              <p>Sat <br> 10AM-12PM</p>
+            </div>
+            <!--classleft e-->
+            <div class="classright">
+              <p>Flower<br>Styling</p>
+            </div>
+            <!--classright e-->
+
+          </div>
+          <!--class1 e-->
+
+          <div class="orderbtn">
+            <a href="#"><p>Join Class</p></a>
+          </div>
+
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="content-slide slide2">
+          
+          <div class="review">
+            <div class="reviewthm">
+              <img src="images/review1_x2.png" alt="previous student">
+              <p>Fascinating<br>Experience!</p>
+            </div>
+            <!--reivewthm e-->
+            <div class="reviewsumm">
+              <p>Lorem ipsum dolor sit amet, sapien etiam, nunc amet dolor ac odio mauris justo.
+              <span class="fullstory1"><a href="#3">Full Story</a></span></p>
+            </div>
+            <!--reviewsumm e-->
+          </div>
+          <!--review e-->
+
+          <div class="review">
+            <div class="reviewthm">
+              <img src="images/review2_x2.png" alt="previous student">
+              <p>Totally<br>Worth it!</p>
+            </div>
+            <!--reivewthm e-->
+            <div class="reviewsumm">
+              <p>Lorem ipsum dolor sit amet, sapien etiam, nunc amet dolor ac odio mauris justo.
+              <span class="fullstory2"><a href="#3">Full Story</a></span></p>
+            </div>
+            <!--reviewsumm e-->
+          </div>
+          <!--review e-->
+
+          <div class="review">
+            <div class="reviewthm">
+              <img src="images/review3_x2.png" alt="previous student">
+              <p>Alison is<br>amazing!</p>
+            </div>
+            <!--reivewthm e-->
+            <div class="reviewsumm">
+              <p>Lorem ipsum dolor sit amet, sapien etiam, nunc amet dolor ac odio mauris justo.
+              <span class="fullstory3"><a href="#3">Full Story</a></span></p>
+            </div>
+            <!--reviewsumm e-->
+          </div>
+          <!--review e-->
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</article>
+<!--article e-->
+
+
+
+
+<!--footer s-->
+<footer>
+<div class="moveToTop">
+<a href="#5" id="toTop">
+  <p>Top</p></a>
+</div>
+<!--moveToTop e-->
+  <ul class="socialicon">
+    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+  </ul>
+  <ul class="careers">
+    <li><a href="#">Careers</a></li>
+    <li><a href="#">Feedback</a></li>
+    <li><a href="#">Privacy Policy</a></li>
+  </ul>
+  <p class="copyright">© Flower by Sarah 2016</p>
+</footer>
+<!--footer e-->
+  
+ </div>
+ <!--wrap e-->
+</body>
+</html>
