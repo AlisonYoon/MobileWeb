@@ -1,0 +1,311 @@
+@charset "utf-8";
+/* 모바일 코딩 필수 공통영역 */
+* {
+ margin:0;
+ padding:0;
+ -webkit-text-size-adjust:none; }
+body {
+ color:#666;
+ font-size:16px;
+ font-family:돋움, Dotum; }
+img, fieldset { border:0; vertical-align:top }
+ul, ol, li, dl { list-style:none; }
+h1, h2, h3, h4, h5, h6 {
+ font-size:100%;
+ font-weight:normal; }
+hr { display:none; }
+a { color:inherit; }
+a, a:link {
+ color:#333;
+ text-decoration:none; }
+a:visited { color:#333; }
+a:hover, a:active {
+ color:#333;
+ text-decoration:none; }
+em, i, address {
+ font-style:normal;
+ font-weight:normal; }
+legend, caption {
+ display:none;
+ clear:both; }
+input, textarea, select, button, table {
+ font-size:inherit;
+ font-family:inherit;
+ line-height:inherit; }
+section, nav, article, aside, hgroup, header, footer { display:block }
+textarea, input {
+ background:url(none);
+ -webkit-border-radius:1px;
+ -webkit-apprearance:none; }
+textarea { resize:none; }
+label { cursor:pointer; }
+
+
+
+#wrap{ width:100%; height:100%; overflow:hidden; background:#fff}
+
+#wrap_head {width:100%; height:65px; position:fixed; z-index:20;}
+.main_logo {display:none; position:relative; left:50% ; display:block; margin:20px 0 0 -60px; font-weight:200; font-size:1.09em; color:#666;}
+
+.nav_btn {	position:fixed;
+			top:20px;
+			right:20px;}
+
+
+
+
+/*hamburger to close*/
+@keyframes hamburger{
+		0% {width:0;}
+		100%{width:35px;}
+}
+
+#nav-icon3 {
+	width:35px;	
+  height: 35px;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  
+}
+
+
+
+#nav-icon3 span {
+	 display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #7d7d7d;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+  
+}
+
+#nav-icon3 span.navicon1 {animation:hamburger ease 0.5s;}
+#nav-icon3 span.navicon2 {animation:hamburger ease 1s;}
+#nav-icon3 span.navicon3 {animation:hamburger ease 1s;}
+#nav-icon3 span.navicon4 {animation:hamburger ease 1.5s;}
+
+#nav-icon3 span:nth-child(1) {
+  top: 0px;
+}
+
+#nav-icon3 span:nth-child(2),#nav-icon3 span:nth-child(3) {
+  top: 12px;
+}
+
+#nav-icon3 span:nth-child(4) {
+  top: 23px;
+}
+
+#nav-icon3.open span:nth-child(1) {
+  top: 12px;
+  width: 0%;
+  left: 50%;
+}
+
+#nav-icon3.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#nav-icon3.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#nav-icon3.open span:nth-child(4) {
+  top: 12px;
+  width: 0%;
+  left: 50%;
+}
+
+
+
+/*navigation*/
+.navBox{display:none; position :fixed; z-index:10; left:0; top:0; width:100%;; height:100%; background:rgba(255,255,255,.95);
+         transition: all else 1s; overflow-y: auto}
+
+.navBox nav {width:300px; margin:0 auto;}
+.navBox nav li a{font-size:2em; color:#666;}
+.navBox nav li.contact {font-size:1.1em; font-weight:400; }
+.navBox nav li.contact span {font-size:0.8em; font-weight:300;}
+.navBox nav li.contact span a {font-size:1em; font-weight:300;}
+.navBox ul.menubtn {display:block; margin:90px 0;}
+.navBox ul.menubtn li{text-align:center; margin:35px 0;}
+.navBox li svg {
+		margin:0 10px;	
+		animation-name:draw;
+		stroke:#666666;
+		stroke-width:1;
+		stroke-dasharray:60px;
+		stroke-dashoffset:60px;
+		animation-fill-mode:forwards;
+		animation-iteration-count:1;
+		animation-timing-function: linear;
+		width:25px;
+		height:25px;
+		animation-duration:0.5s;
+	}
+
+@keyframes draw {
+	to {
+		stroke-dashoffset:0;
+	}
+}
+.navBox svg path {stroke-width:5;}
+
+.leftbullet {display:block; position:absolute; top:60px; left:0;}
+.leftbullet li {margin:25px;}
+.navBox nav ul.leftbullet li svg{margin:10px 0;}
+
+.rightbullet {display:block; position:absolute; top:60px; right:0;}
+.rightbullet li {margin:25px;}
+.navBox nav ul.rightbullet li svg{margin:10px 0;}
+
+
+/*footer*/
+footer .moveToTop {position:relative; left:50%; margin:50px 0 0 -38px; width:76px; height:45px; background:rgba(57,185,147,0.8);}
+footer .moveToTop p {color:#fff; font-size:1.2em; font-weight:200; padding:10px 20px;}
+footer .socialicon {overflow:hidden; margin:50px 0; width:173px; position:relative; left:50%; margin-left:-86px;}
+.socialicon li {float:left; margin: 0 20px;}
+.socialicon .fa {color:#7d7d7d;font-size:1.4em;}
+.careers {overflow:hidden; display:block; width:300px; position:relative; left:50%; margin-left:-150px;}
+.careers li {margin:0 20px;color:#7d7d7d; float:left;font-weight:200; font-size:0.83em;}
+.copyright {position:relative; left:50%; display:block; width:117px;color:#7d7d7d; font-size:0.7em; font-weight: 100; margin:25px 0 10px -58px;}
+
+
+/*Careers modal popup*/
+
+#careerModal {background:#fff; overflow-y: auto;}
+#careerModal .modalTop {overflow:hidden; width:100%;}
+#careerModal h3 {font-size:2em; text-align:center; font-weight:300; margin:50px 0 20px;}
+#careerModal span {display:block; width:60px; height:2px; background:#39B993; margin:0 auto;}
+#careerModal h4 {text-align:center; font-size:1.3em; margin:20px 0; border:1px solid #999; padding:10px;}
+#careerModal .careerpopup .modalTop a {padding:6px; float:right;}
+#careerModal img {width:35px;}
+#careerModal img.careersmain {width:100%;}
+#careerModal p{width:90%;font-size: 1.2em; margin:40px 0; text-align: center; font-weight:200;}
+.careerDialog {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(255,255,255,0.9);
+  z-index: 99999;
+  opacity:0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+}
+.careerDialog:target {
+  opacity:1;
+  pointer-events: auto;
+}
+.careerDialog > div {
+  width: 90%;
+  position: relative;
+  margin: 0 5%;
+  padding: 5px;
+}
+
+
+/*Feedback modal popup*/
+
+#feedbackModal {background:#fff; overflow-y: auto;}
+#feedbackModal .modalTop {overflow:hidden; width:100%;}
+#feedbackModal h3 {font-size:2em; text-align:center; font-weight:300; margin:50px 0 20px;}
+#feedbackModal span {display:block; width:60px; height:2px; background:#39B993; margin:0 auto;}
+#feedbackModal .feedbackpopup .modalTop a {padding:6px; float:right;}
+#feedbackModal h4 {font-size:1.6em; font-weight:300; margin-left:10%;}
+#feedbackModal img {width:35px;}
+#feedbackModal p{width:90%;font-size: 1.2em; margin:40px 0; text-align: center; font-weight:200;}
+#feedbackModal input {width:80%; height:40px; margin:30px 10%; border:1px solid #666;}
+#feedbackModal input.message{height:100px;}
+#feedbackModal select {border:1px solid #666; width:80%; height:40px; margin:30px 10%; font-size:1.4em; color:#666; font-weight:200; appearance: none; }
+#feedbackModal select option {font-weight:200; margin:10px 0;}
+#feedbackModal .submitbtn {cursor: pointer; position:relative; left:50%; margin:50px 0 0 -54px; width:108px; height:45px; background:rgba(57,185,147,1);}
+#feedbackModal .submitbtn p {color:#fff; font-size:1.2em; font-weight:200; padding:10px 5px;}
+.feedbackDialog {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(255,255,255,0.9);
+  z-index: 99999;
+  opacity:0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+}
+.feedbackDialog:target {
+  opacity:1;
+  pointer-events: auto;
+}
+.feedbackDialog > div {
+  width: 90%;
+  position: relative;
+  margin: 0 5%;
+  padding: 5px;
+}
+
+
+/*Privacy Policy modal popup*/
+
+#privacyModal {background:#fff; overflow-y: auto;}
+#privacyModal .modalTop {overflow:hidden; width:100%;}
+#privacyModal h3 {font-size:2em; text-align:center; font-weight:300; margin:50px 0 20px;}
+#privacyModal span {display:block; width:60px; height:2px; background:#39B993; margin:0 auto;}
+#privacyModal .privacypopup .modalTop a {padding:6px; float:right;}
+#privacyModal h4 {font-size:1.6em; font-weight:300; width:34%; margin:10px 33%;}
+#privacyModal img {width:35px;}
+#privacyModal p{width:90%;font-size: 1.2em; margin:40px 5%; text-align: center; font-weight:200;}
+.privacyDialog {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(255,255,255,0.9);
+  z-index: 99999;
+  opacity:0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+}
+.privacyDialog:target {
+  opacity:1;
+  pointer-events: auto;
+}
+.privacyDialog > div {
+  width: 90%;
+  position: relative;
+  margin: 0 5%;
+  padding: 5px;
+}

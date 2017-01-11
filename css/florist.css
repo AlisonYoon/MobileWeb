@@ -1,0 +1,16 @@
+/* CSS Document */
+
+*{margin:0;padding:0;
+	list-style: none;
+font-family: 'Roboto', sans-serif;}
+
+article {width:100%;}
+
+
+section.floristintro h2 {font-size:1.25em; margin:-95px 0 30px 35px}
+section.floristintro h2 span {font-size:3em; color:#FD996B; margin:12px;}
+section.floristintro img {width:100%; margin:65px 0;}
+section.floristintro p {margin:10px 35px;}
+
+section.viewmore div {text-align:center; margin:30px auto; width:70%; height:52px; border:2px solid #08AE9E;}
+section.viewmore div p {font-weight:300; padding:15px 0;}

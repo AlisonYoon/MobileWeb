@@ -1,0 +1,58 @@
+/* CSS Document */
+
+*{margin:0;padding:0;
+	list-style: none;
+font-family: 'Roboto', sans-serif;}
+
+article {width:100%;}
+
+article .box{width:100%; height:50px; overflow: hidden; position:relative;margin:100px 0 0 0; }
+article .tabs {overflow:auto; width:100%;}
+article .tabs .abox {overflow:hidden; display:block; width:700px; margin:15px 0;}
+article .tabs a {font-size: 1.2em; font-size:1.2em; font-weight:500; margin: 0 20px; float:left;}
+
+article .tabs a.active {
+  background:url(../images/yourdaymenu.png) no-repeat center 4px;
+  background-size:20px;
+}
+
+.slide1 { text-align:center;}
+.class1 {overflow:hidden;width:80%; margin:40px auto;}
+.class1 .classleft{float:left; }
+.class1 .classleft p {font-size:1.5em; color:#404040;}
+.class1 .classleft p.date {font-size:1em; color:#666;}
+.class1 .classright {float:right;}
+.class1 .classright p {font-size:1.8em; color:#404040; margin:10px 0;}
+
+.orderbtn{text-align:center; margin:100px auto 90px; width:70%; height:52px; border:2px solid #08AE9E;}
+.orderbtn p {font-size:1.15em; color:#333; font-weight:400; padding:15px 0; margin:0;}
+
+.review .reviewthm {overflow:hidden; width:85%; margin:0 auto;}
+.review .reviewthm img {float:left; margin:30px 0; width:130px;}
+.review .reviewthm p {float:right; margin:70px 0; font-size:1.3em;}
+
+.review .reviewsumm {overflow:hidden; margin-bottom:30px;}
+.review .reviewsumm span {float:right;}
+.review .reviewsumm p {display:block; width:80%; margin:0 auto;}
+.review .reviewsumm p a{color: #51A697}
+
+
+.fullreview1 {display:none; overflow:scroll; position:fixed; z-index:30; left:0; top:0; width:100%;; height:100%; background:rgba(255,255,255,.95);
+         transition: all else 1s; text-align:center;} 
+.fullreview1 img {margin-top:100px;}
+.fullreview1 img.closebtn {position:absolute; top:-70px; right:20px; width:35px;}
+.fullreview1 p {margin:30px;}
+
+.fullreview2 {display:none; overflow:scroll; position:fixed; z-index:30; left:0; top:0; width:100%;; height:100%; background:rgba(255,255,255,.95);
+         transition: all else 1s; text-align:center;} 
+.fullreview2 img {margin-top:100px;}
+.fullreview2 img.closebtn {position:absolute; top:-70px; right:20px; width:35px;}
+.fullreview2 p {margin:30px;}
+
+.fullreview3 {display:none; overflow:scroll; position:fixed; z-index:30; left:0; top:0; width:100%;; height:100%; background:rgba(255,255,255,.95);
+         transition: all else 1s; text-align:center;} 
+.fullreview3 img {margin-top:100px;}
+.fullreview3 img.closebtn {position:absolute; top:-70px; right:20px; width:35px;}
+.fullreview3 p {margin:30px;}
+
+.closebtn {cursor: pointer}
